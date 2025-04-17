@@ -89,7 +89,7 @@ config = ["*"]
 version = { attr = "{{ cookiecutter.project_pkg_name }}.__version__" }
 
 [project.scripts]
-hello = "{{ cookiecutter.project_pkg_name }}.entrypoints:hello.main"
+main = "{{ cookiecutter.project_pkg_name }}.entrypoints:main.main"
 
 [tool.coverage.run]
 omit = [
