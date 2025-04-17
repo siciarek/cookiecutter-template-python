@@ -3,7 +3,7 @@ Readme for you application: {{cookiecutter.project_pkg_name}}
 
 ---
 
-The **cookiecutter-python-template** documentation was constructed using [Mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
+The **cookiecutter-template-python** documentation was constructed using [Mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
 
 Documentation can be found: [**https://silenteight.github.io/{{ cookiecutter.project_slug }}**](https://silenteight.github.io/{{ cookiecutter.project_slug }})
 

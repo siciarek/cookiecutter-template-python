@@ -2,12 +2,12 @@
 
 # Project information
 site_name: Cookiecutter Python Template
-site_url: https://silenteight.github.io/cookiecutter-python-template
+site_url: https://silenteight.github.io/cookiecutter-template-python
 site_description: Cookiecutter Python Template
 
 # Repository
-repo_name: silenteight/cookiecutter-python-template
-repo_url: https://github.com/silenteight/cookiecutter-python-template
+repo_name: silenteight/cookiecutter-template-python
+repo_url: https://github.com/silenteight/cookiecutter-template-python
 
 # Copyright
 copyright: |
@@ -55,7 +55,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/siciarek/cookiecutter-python-template
+      link: https://github.com/siciarek/cookiecutter-template-python
 
 markdown_extensions:
   - pymdownx.highlight:

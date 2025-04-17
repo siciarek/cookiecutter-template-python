@@ -1,4 +1,4 @@
-# cookiecutter-python-template
+# cookiecutter-template-python
 Cookiecutter Template Repository for Your Python applications.
 
 ## Quickstart
@@ -21,7 +21,7 @@ python -m pip install cookiecutter
 Generate a Python package project:
 
 ```shell
-pipx run cookiecutter git@github.com:siciarek/cookiecutter-python-template.git
+pipx run cookiecutter git@github.com:siciarek/cookiecutter-template-python.git
 ```
 
 Then follow **[Tutorial](docs/getting-started.md)** to finish other configurations.
@@ -54,6 +54,6 @@ Detailed description about NFRs can be found below:
 
 ---
 
-The **cookiecutter-python-template** documentation was constructed using [Mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
+The **cookiecutter-template-python** documentation was constructed using [Mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
 
 Source of this documentation can be found in [docs](docs) folder.

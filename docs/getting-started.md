@@ -22,7 +22,7 @@ Now it's time to generate your Python package.
 Run the following command and feed with answers, If you don’t know what to enter, stick with the defaults:
 
 ``` shell
-pipx run cookiecutter git@github.com:siciarek/cookiecutter-python-template.git
+pipx run cookiecutter git@github.com:siciarek/cookiecutter-template-python.git
 ```
 
 Finally, a new folder will be created under current folder, the name is the answer you provided to `project_slug`.

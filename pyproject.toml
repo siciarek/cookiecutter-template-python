@@ -3,7 +3,7 @@ requires = ["setuptools >= 69.0.3", "wheel >= 0.42.0", "setuptools-scm >= 8.0.4"
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cookiecutter-python-template"
+name = "cookiecutter-template-python"
 version = "0.3.0"
 authors = [{name = "Jacek Siciarek", email = "siciarek@gmail.com"}]
 license = { file = "LICENSE" }
@@ -25,6 +25,6 @@ where = ["."]
 
 [project.urls]
 Homepage = "https://github.com/siciarek/'
-Documentation = "https://github.com/siciarek/cookiecutter-python-template"
-Repository = "https://github.com/siciarek/cookiecutter-python-templateo"
-Changelog = "https://github.com/siciarek/cookiecutter-python-template/docs/change-log.md"
+Documentation = "https://github.com/siciarek/cookiecutter-template-python"
+Repository = "https://github.com/siciarek/cookiecutter-template-pythono"
+Changelog = "https://github.com/siciarek/cookiecutter-template-python/docs/change-log.md"
