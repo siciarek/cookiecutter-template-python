@@ -27,4 +27,25 @@ where = ["."]
 Homepage = "https://github.com/siciarek/'
 Documentation = "https://github.com/siciarek/cookiecutter-template-python"
 Repository = "https://github.com/siciarek/cookiecutter-template-pythono"
-Changelog = "https://github.com/siciarek/cookiecutter-template-python/docs/change-log.md"
+Changelog = "https://github.com/siciarek/cookiecutter-template-python/docs/changelog.md"
+
+
+[tool.git-changelog]
+bump = "minor"
+convention = "conventional"
+in-place = true
+#filter-commits = "0.5.0.."
+marker-line = "<!-- insertion marker -->"
+output = "docs/changelog.md"
+parse-refs = false
+parse-trailers = false
+provider = "gitlab"
+repository = "."
+sections = "fix,feat"
+template = "keepachangelog"
+version-regex = "^## \\\\[(?P<version>v?[^\\\\]]+)"
+versioning = "semver"
+zerover = true
+
+[jinja_context]
+footer = "Copyright 2024 Jacek Siciarek"
