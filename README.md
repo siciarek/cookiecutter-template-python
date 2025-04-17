@@ -1,5 +1,5 @@
 # cookiecutter-python-template
-Cookiecutter Template Repository for new Python applications.
+Cookiecutter Template Repository for Your Python applications.
 
 ## Quickstart
 
