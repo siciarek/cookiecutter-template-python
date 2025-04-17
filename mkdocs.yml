@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+# Project information
+site_name: Cookiecutter Python Template
+site_url: https://silenteight.github.io/cookiecutter-python-template
+site_description: Cookiecutter Python Template
+
+# Repository
+repo_name: silenteight/cookiecutter-python-template
+repo_url: https://github.com/silenteight/cookiecutter-python-template
+
+# Copyright
+copyright: |
+  &copy; 2024 <a href="https://silenteight.com"  target="_blank" rel="noopener">Silent Eight</a>
+
+# Configuration
+theme:
+  name: material
+  font:
+    text: Roboto
+  features:
+#    - content.action.edit
+    - content.action.view
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+#    - toc.integrate
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: deep purple
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: deep purple
+      accent: purple
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/siciarek/cookiecutter-python-template
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - def_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - include-markdown
+  - search:
+      lang: en
+
+# Page tree
+nav:
+- Cookiecutter Python Template:
+  - index.md
+  - Getting Started: getting-started.md
+- Change Log: change-log.md
