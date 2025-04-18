@@ -7,7 +7,7 @@ hello_data_provider = (
     ("Handsome", "Hello, Handsome!", "Custom name: Handsome."),
 )
 
-@pytest.mark.parametrize("name, expected, messsage", hello_data_provider)
+@pytest.mark.parametrize("name, expected, message", hello_data_provider)
 def test_hello(name, expected, message):
     srv = Dummy(name=name) if name else Dummy()
     assert srv.say_hello() == expected, message
