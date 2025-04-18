@@ -1,3 +1,6 @@
+main:
+	. .venv/bin/activate && main
+
 install: prepare_setup
 	python -m pip install "."
 	@echo APPLICATION INSTALLED SUCCESSFULLY
@@ -8,8 +11,8 @@ install_dev: prepare_setup
 	@echo DEV SETUP COMPLETED SUCCESSFULLY
 
 prepare_setup: clean
-	-deactivate
 	rm -rvf .venv .tox
+	git init -b master
 	python -m venv .venv
 	. .venv/bin/activate && python -m pip install --upgrade pip setuptools wheel build
 
@@ -31,12 +34,10 @@ pipc:
 # Run unit tests
 
 test:
-	. .venv/bin/activate
-	pytest
+	. .venv/bin/activate && pytest
 
 tox:
-	. .venv/bin/activate
-	tox --verbose
+	. .venv/bin/activate && tox --verbose
 
 # Check application code complexity
 
