@@ -7,34 +7,24 @@ name = "{{ cookiecutter.project_slug }}"
 description = "{{ cookiecutter.project_short_description }}."
 readme = "README.md"
 dynamic = ["version"]
-{%- if cookiecutter.python_version == "py3.9" %}
-requires-python = ">=3.9,<3.10"
-{%- elif cookiecutter.python_version == "py3.10" %}
-requires-python = ">=3.9,<3.11"
-{%- elif cookiecutter.python_version == "py3.11" %}
-requires-python = ">=3.9,<3.12"
+{%- if cookiecutter.python_version == "py3.11" %}
+requires-python = ">=3.11,<3.12"
 {%- elif cookiecutter.python_version == "py3.12" %}
-requires-python = ">=3.9,<3.13"
+requires-python = ">=3.12,<3.13"
+{%- elif cookiecutter.python_version == "py3.13" %}
+requires-python = ">=3.13,<3.14"
 {%- endif %}
 license = { file = "LICENSE" }
 authors = [{ name = "Jacek Siciarek", email = "siciarek@gmail.com" }]
 maintainers = [{ name = "Jacek Siciarek", email = "siciarek@gmail.com" }]
 classifiers = [
     "Development Status :: 4 - Beta",
-{%- if cookiecutter.python_version == "py3.9" %}
-    "Programming Language :: Python :: 3.9",
-{%- elif cookiecutter.python_version == "py3.10" %}
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-{%- elif cookiecutter.python_version == "py3.11" %}
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
+{%- if cookiecutter.python_version == "py3.11" %}
     "Programming Language :: Python :: 3.11",
 {%- elif cookiecutter.python_version == "py3.12" %}
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+{%- elif cookiecutter.python_version == "py3.13" %}
+    "Programming Language :: Python :: 3.13",
 {%- endif %}
 ]
 dependencies = [
@@ -120,14 +110,12 @@ format = "simple"  # Output format. one of: json, markdown, html, csv, ansi, sim
 legacy_tox_ini = """
 [tox]
 isolated_build = True
-{%- if cookiecutter.python_version == "py3.9" %}
-envlist = py{39}
-{%- elif cookiecutter.python_version == "py3.10" %}
-envlist = py{39,310}
-{%- elif cookiecutter.python_version == "py3.11" %}
-envlist = py{39,310,311}
+{%- if cookiecutter.python_version == "py3.11" %}
+envlist = py{311}
 {%- elif cookiecutter.python_version == "py3.12" %}
-envlist = py{39,310,311,312}
+envlist = py{312}
+{%- elif cookiecutter.python_version == "py3.13" %}
+envlist = py{313}
 {%- endif %}
 [testenv]
 deps:

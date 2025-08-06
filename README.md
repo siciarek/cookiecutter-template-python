@@ -21,7 +21,7 @@ python -m pip install cookiecutter
 Generate a Python package project:
 
 ```shell
-pipx run cookiecutter git@github.com:siciarek/cookiecutter-template-python.git
+pipx run cookiecutter https://github.com/siciarek/cookiecutter-template-python.git
 ```
 
 Then follow **[Tutorial](docs/getting-started.md)** to finish other configurations.
